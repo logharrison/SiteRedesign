@@ -67,3 +67,28 @@ $(document).ready(function() {
 		$("#next").css('transform', 'rotate(180deg)');
 	});
 });
+
+
+
+// Fades in "Logan Harrison" on home slide
+
+$(document).ready(function () {
+   
+ $(".hidden").fadeIn(1000).removeClass("hidden", 1000);
+
+});
+
+
+
+
+/*http://www.learningjquery.com/2016/06/12-jquery-plugins-to-animate-text
+
+https://mattboldt.com/demos/typed-js/
+
+decent examples of typing animation
+*/
+
+
+
+
+ 
