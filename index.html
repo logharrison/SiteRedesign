@@ -1,156 +1,35 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logan Harrison | HOME</title>
+    <!-- add meta tags -->
+  </head>
+  <body>
+ 
 <header>
   <ul>
-    <li class="current menu0">HOME</li>
-    <li class="menu1">ABOUT</li>
-    <li class="menu2">PROJECTS</li>
-    <li class="menu3">CONTACT</li>
+    <li>HOME</li>
+    <li>ANALYSIS</li>
+    <li>SERVICES</li>
+    <li>CASE STUDIES</li>
+    <li>CONTACT</li>
   </ul>
 </header>
 
-<div id="slides">
-  <nav>
-    <i class="fa fa-chevron-circle-down" id="next"></i>
-  </nav>
 
-  <!-- Home slide -->
-  <div class="slide slide0">
+<h2>LOGAN HARRISON FINANCIAL & TECHNOLOGY SOLUTIONS</h2>
 
-    <div id="title">
-      <h2 class="hidden1">Hello, my name is</h2>
-      <h1 class="hidden">Logan Harrison</h1>
-      <h2 class="hidden3">and I'm a Web Developer</h2>
-    </div>
-  </div>
+<p>Logan Harrison is an independent consulting firm in Lake Mary, Florida.</p>
 
-  <!-- About slide -->
-  <div class="slide slide1">
-    <h1>Who am I?</h1>
-    <p>Hi, I’m Logan Harrison, a freelance web developer based out of New York City. At the beginning of my career, I spent several years in the corporate world as a web programmer for an international consulting firm, working along side a team of graphic
-      artists, statistical analysts, and product managers. One year ago I left the corporate world and transitioned to working independently as a freelance web developer.
-      <br>
-      <br> As a full time web developer, you can depend on me being available indefinitely as you need me for years to come. I am experienced with the mechanics behind vanilla HTML, CSS, and JavaScript and I specialize in Bootstrap, Sass, and jQuery.
-      In addition to writing code, I also provide general web administration and hosting services, logo design, and more. Take a look around my portfolio to get an idea of the quality of the services I can offer you and see up to date recommendations
-      from some of my previous and current clients.
-    </p>
-  </div>
-
-  <!-- Projects slide -->
-  <div class="slide slide2">
-    <h1>A few things I've created:</h1>
-
-    <!-- Snake Project -->
-    <div class="firstProject">
-      <canvas id="gc" width="400" height="400"></canvas>
-      <script>
-        window.onload = function() {
-          canv = document.getElementById("gc");
-          ctx = canv.getContext("2d");
-          document.addEventListener("keydown", keyPush);
-          setInterval(game, 1000 / 15);
-        }
-        px = py = 10;
-        gs = tc = 20;
-        ax = ay = 15;
-        xv = yv = 0;
-        trail = [];
-        tail = 5;
-
-        function game() {
-          px += xv;
-          py += yv;
-          if (px < 0) {
-            px = tc - 1;
-          }
-          if (px > tc - 1) {
-            px = 0;
-          }
-          if (py < 0) {
-            py = tc - 1;
-          }
-          if (py > tc - 1) {
-            py = 0;
-          }
-          ctx.fillStyle = "black";
-          ctx.fillRect(0, 0, canv.width, canv.height);
-          ctx.fillStyle = "lime";
-          for (var i = 0; i < trail.length; i++) {
-            ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
-            if (trail[i].x == px && trail[i].y == py) {
-              tail = 5;
-            }
-          }
-          trail.push({
-            x: px,
-            y: py
-          });
-          while (trail.length > tail) {
-            trail.shift();
-          }
-          if (ax == px && ay == py) {
-            tail++;
-            ax = Math.floor(Math.random() * tc);
-            ay = Math.floor(Math.random() * tc);
-          }
-          ctx.fillStyle = "red";
-          ctx.fillRect(ax * gs, ay * gs, gs - 2, gs - 2);
-        }
-
-        function keyPush(evt) {
-          switch (evt.keyCode) {
-            case 37:
-              xv = -1;
-              yv = 0;
-              break;
-            case 38:
-              xv = 0;
-              yv = -1;
-              break;
-            case 39:
-              xv = 1;
-              yv = 0;
-              break;
-            case 40:
-              xv = 0;
-              yv = 1;
-              break;
-          }
-        }
-      </script>
-    </div>
-  </div>
-
-  <!-- Contact slide -->
-  <div class="slide slide3">
-    <h1>You can find me online here:</h1>
-    <ul>
-      <a href="mailto:contactloganharrison@gmail.com">
-        <li>
-          <i class="fa fa-envelope"></i> Email
-        </li>
-      </a>
-      <a href="https://codepen.io/logharrison/">
-        <li>
-          <i class="fa fa-codepen"></i> CodePen
-        </li>
-      </a>
-      <a href="https://github.com/logharrison">
-        <li>
-          <i class="fa fa-github"></i> GitHub
-        </li>
-      </a>
-    </ul>
-
-  </div>
-</div>
-
-<footer>
-  <p class="copy">&copy; 2018 Logan Harrison</p>
-
-  <div id="links">
-    <a href="mailto:contactloganharrison@gmail.com"><i class="fa fa-envelope"></i></a>
-    <a href="https://codepen.io/logharrison/"><i class="fa fa-codepen"></i></a>
-    <a href="https://github.com/logharrison"><i class="fa fa-github"></i></a>
-  </div>
-</footer>
+<p>We provide objective, competent advice in the areas of Business Financial Planning, and Technology Software Solutions, particularly in the areas of database technologies, customized software solutions and computer security.</p>
+<p>Logan Harrison specializes in supporting the small business owner and entrepreneur.</p>
+<p>Let us act as your support team, that way, you can concentrate on doing what you do best, running your business.</p>
+<p>Logan Harrison will do the rest.</p>
+  
+    <footer>
+      <p>&copy; Logan Harrison Consulting</p>
+      
+    </footer>
+    
+  </body>
+</html>
